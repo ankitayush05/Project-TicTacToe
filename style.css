@@ -1,0 +1,62 @@
+h1{
+    color: #260b86;
+    text-decoration: underline;
+}
+.cell{
+    width: 100px;
+    height: 100px;
+    border: 2px solid black;
+    box-shadow: 0 0 0 2px black;
+    line-height: 100px;
+    cursor: pointer;
+    font-size: 75px;
+    text-align: center;
+}
+#cellContainer{
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    background-color: aqua;
+    margin: auto;
+    width: 312px;
+
+}
+#gameContainer{
+    text-align: center;
+    font-family: Permanent Marker, cursive;
+    background-color: #ebf0af;
+    padding: 30px;
+    border-radius: 10px;
+    height: 90vh;
+
+}
+#restartBtn{
+    background-color: #4CAF50; /* Green */
+    border: none;
+    border-radius: 10px;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin-top: 20px;
+    cursor: pointer;
+}
+
+#restartBtn:hover {
+    background-color: #45a049; /* Darker green on hover */
+    transform: scale(1.05); /* Slightly enlarge on hover */
+}
+#restartBtn:active {
+    background-color: #3e8e41; /* Even darker green on click */
+}
+
+#statusText{
+    font-size: 24px;
+    margin-top: 20px;
+    color: #ee0d0d;
+    font-weight: bold;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);   
+    transition: color 0.3s ease, transform 0.3s ease;
+
+}
